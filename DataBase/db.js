@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 
-
-const sequelize = new Sequelize('userdb', 'root', '', {
+//
+const db = new Sequelize('userdb', 'root', 'rbk6', {
   host: 'localhost',
   dialect:'mysql'
 });
@@ -12,3 +12,4 @@ db.sync({ force: false, logging: false  }).then(() => {
 });
 
 module.exports.db = db;
+module.exports.Sequelize = Sequelize;
