@@ -13,4 +13,5 @@ const User = db.define('user', {
     Role:{type:Sequelize.STRING}
 
 });
+
 module.exports.User = User;
